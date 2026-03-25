@@ -15,6 +15,7 @@ A FastAPI-based REST API for managing items with SQLite database and a web inter
 - **Database**: SQLite
 - **Frontend**: HTML/CSS/JavaScript (vanilla)
 - **Server**: Uvicorn
+- **Version Control**: Git
 
 ## Installation
 
@@ -71,14 +72,19 @@ curl -X POST http://localhost:8000/api/items/1 \
 curl -X DELETE http://localhost:8000/api/items/1
 ```
 
+## Version Control
+
+This project uses Git for version control. The repository is hosted on [GitHub](https://github.com/mea03kkw/fast-API-exercise).
+
 ## Project Structure
 
 ```
 fastapi-lab/
-├── main.py           # FastAPI application and endpoints
-├── requirements.txt  # Python dependencies
-├── items.db          # SQLite database (auto-created)
+├── .gitignore          # Git ignore rules
+├── README.md           # Project documentation
+├── main.py             # FastAPI application and endpoints
+├── requirements.txt    # Python dependencies
 └── static/
-    ├── index.html    # Web interface
-    ├── app.js       # Frontend JavaScript
-    └── style.css    # Frontend styles
+    ├── index.html      # Web interface
+    ├── app.js          # Frontend JavaScript
+    └── style.css       # Frontend styles
